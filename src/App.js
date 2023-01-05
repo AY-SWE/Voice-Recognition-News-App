@@ -11,14 +11,26 @@ import "./App.css";
   @author Andy Yang
 */
 
-import React from 'react'
+import React from "react";
+import { useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
-const App = () => {
-  return (
-    <div className="app">
-        HELLLOOO
-    </div>
-  )
-}
 
-export default App
+const alanKeyToken = '694cd48855660db47cf975bf13e78e2d2e956eca572e1d8b807a3e2338fdd0dc/stage';
+const App = () => {
+  useEffect(() => {
+    alanBtn({
+      key: alanKeyToken,
+      onCommand:({command})=>{
+        switch(command){
+          case 'testCommand':
+            alert('testcommand activated')  
+          break;
+        }
+      }
+    })
+  }, []);
+
+  return <div className="app">HELLLOOO</div>;
+};
+
+export default App;
