@@ -1,20 +1,11 @@
-import React from 'react'
-import { Card, CardActions, CardActionArea, CardContent, CardMedia, Typography, Button } from '@mui/material'
+import React from "react";
 
-const NewsCard = () => {
+const NewsCard = ({article:{description,publishedAt, source, title,url, urlToImage,}, i}) => {
   return (
-    <Card>
-        <CardActionArea>    
-            <CardMedia/>
-            <div>
-                <Typography color = 'textSecondary' variant='body2'
-                 component='h2'>
+    <div>
+        HELLOOOOOOOO
+    </div>
+  );
+};
 
-                </Typography>
-            </div>
-        </CardActionArea>
-    </Card>
-  )
-}
-
-export default NewsCard
+export default NewsCard;
