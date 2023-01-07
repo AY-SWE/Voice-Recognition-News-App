@@ -11,15 +11,16 @@ const NewsCard = ({
           <img src={urlToImage} alt="" />
         </div>
 
-        <div class="card-body">
-          <span class="tag tag-teal">Technology</span>
-          <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
-          <p>An exploration into the truck's polarising design</p>
-          <div class="user">
-            <div class="user-info">
-              <h5>July Dec</h5>
-              <small>2h ago</small>
-            </div>
+        <div class={css.cardBody}>
+          <span>{source.name}</span>
+          <span>{title}</span>
+          <span>{description}</span>
+          <span>{new Date(publishedAt).toDateString()}</span>
+          <div className={css.cardBodyFooter}>
+            <a href={url}>
+              <button>Read More</button>
+            </a>
+            <h2>{i+1}</h2>
           </div>
         </div>
       </div>
