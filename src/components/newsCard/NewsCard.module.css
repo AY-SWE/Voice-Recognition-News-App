@@ -1,16 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
-
-body .container {
-  display: flex;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 40px 0;
+  position: relative;
 }
 
-body .container .card {
-  position: relative;
+.card {
+  height: 25rem;
+  grid-gap: 2rem;
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
   height: 440px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
@@ -21,16 +24,10 @@ body .container .card {
   transition: 0.5s;
 }
 
-body .container .card:nth-child(1) .box .content a {
-  background: #2196f3;
-}
-
-body .container .card:nth-child(2) .box .content a {
-  background: #e91e63;
-}
-
-body .container .card:nth-child(3) .box .content a {
-  background: #23c186;
+.cardHeader>img{
+  top:3rem;
+  width: 6rem;
+  height: 11rem;
 }
 
 body .container .card .box {
