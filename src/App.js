@@ -25,9 +25,11 @@ const App = () => {
     alanBtn({
       key: alanKeyToken,
       onCommand: ({ command, articles }) => {
-        if (command === "newHeadlines") {
-          // console.log(articles); //valid
-          setNewsArticles(newsArticles);
+        switch(command){
+          case 'newsHeadline':
+            setNewsArticles(articles);
+            console.log(newsArticles);
+            break;
         }
       },
     });
