@@ -1,0 +1,36 @@
+.container {
+    padding: 0.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px #5db9f3,
+    inset -5px -5px 15px #84cdfa,
+    5px 5px 15px #5ad1cd, -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.cardBody{
+  display: flex;
+  flex-direction: column;
+  background-color: #f3ec78;
+    background-image: linear-gradient(45deg,#d9eaed,#64c6ed);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+

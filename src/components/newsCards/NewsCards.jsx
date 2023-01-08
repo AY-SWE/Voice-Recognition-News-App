@@ -4,10 +4,10 @@ import NewsCard from "../newsCard/NewsCard";
 import LandingCard from "../landingCard/LandingCard";
 
 const landingCards = [
-  { title: "Latest News" },
-  { title: "News By Sources" },
-  {title: 'News By Terms'},
-  {title: 'News By Categories' },
+  { title: "Latest News", text: "Get me the latest news"},
+  { title: "News By Sources", info:'CNN, BCC News, New York Times, NBC News, Fox News', text: "Give me the news from CNN"},
+  {title: 'News By Terms', info:'ChatGPT, Stocks, Supernatural, Anime', text: "How is stocks doing" },
+  {title: 'News By Categories', info:'Sports, Finance, Entertainment, Technology', text: "Give me the recent sports highlights"  },
 ];
 
 export const NewsCards = ({ articles }) => {
@@ -16,7 +16,7 @@ export const NewsCards = ({ articles }) => {
     return (
       <div className={css.container}>
         {landingCards.map((landingCard) => (
-          <LandingCard/>
+          <LandingCard cardInfo ={landingCard}/>
         ))}
       </div>
     );
