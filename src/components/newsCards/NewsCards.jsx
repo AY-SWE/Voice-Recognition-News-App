@@ -6,8 +6,8 @@ import LandingCard from "../landingCard/LandingCard";
 const landingCards = [
   { title: "Latest News", text: "Get me the latest news"},
   { title: "News By Sources", info:'CNN, BCC News, New York Times, NBC News, Fox News', text: "Give me the news from CNN"},
-  {title: 'News By Terms', info:'ChatGPT, Stocks, Supernatural, Anime', text: "How is stocks doing" },
-  {title: 'News By Categories', info:'Sports, Finance, Entertainment, Technology', text: "Give me the recent sports highlights"  },
+  {title: 'News By Terms', info:'ChatGPT, Stocks, Supernatural, Anime', text: "Say any terms desired" },
+  {title: 'News By Categories', info:'business, entertainment, general, health, science, sports, technology', text: "Give me the recent sports highlights"  },
 ];
 
 export const NewsCards = ({ articles }) => {

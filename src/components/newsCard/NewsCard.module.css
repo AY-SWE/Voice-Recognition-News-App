@@ -23,9 +23,12 @@
 }
 
 .cardHeader>img{
-  width: 20rem;
+  width: 100%;
+  object-fit: cover;
+  height: 10rem;
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px
+  border-top-right-radius: 15px;
+  
 }
 
 .cardBody{
