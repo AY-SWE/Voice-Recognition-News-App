@@ -20,6 +20,7 @@ const alanKeyToken =
   "694cd48855660db47cf975bf13e78e2d2e956eca572e1d8b807a3e2338fdd0dc/stage";
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
+  const [color, setColor] = useState("");
 
   useEffect(() => {
     alanBtn({
@@ -28,16 +29,18 @@ const App = () => {
         switch(command){
           case 'newsHeadline':
             setNewsArticles(articles);
-            console.log(newsArticles);
+            //console.log(newsArticles);
             break;
         }
       },
     });
   }, []);
-
+  
   return (
     <div className="app">
-      HELLLOOO
+      <span className="title">
+        Speech-Recognition News App
+      </span>
       <NewsCards articles={newsArticles} />
     </div>
   );

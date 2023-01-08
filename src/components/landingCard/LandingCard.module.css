@@ -9,8 +9,9 @@
 
 .card {
   height: 25rem;
-  display: flex;
+  display:flex;
   flex-direction: column;
+  justify-content:space-between;
   min-width: 320px;
   height: 440px;
   box-shadow: inset 5px 5px 5px #5db9f3,
@@ -19,18 +20,34 @@
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
+  padding: 4rem 0rem;
+  
 }
 
-.cardBody{
+.cardBody, .cardBodyBottom{
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  gap: 1rem;
   background-color: #f3ec78;
-    background-image: linear-gradient(45deg,#d9eaed,#64c6ed);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+  background-image: linear-gradient(45deg,#d9eaed,#64c6ed);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.cardBody>span{
+  font-size: 20px;
+  padding: 0rem 1rem;
+  text-align: center;
+}
+
+.cardBodyBottom>span{
+  font-weight: 500;
+  font-size: 16px;
 }
 
 

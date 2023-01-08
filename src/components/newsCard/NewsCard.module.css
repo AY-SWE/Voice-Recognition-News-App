@@ -13,12 +13,13 @@
   flex-direction: column;
   min-width: 320px;
   height: 440px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  box-shadow: inset 5px 5px 5px rgba(202, 197, 197, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    5px 5px 15px rgba(216, 215, 215, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
+  background: whitesmoke;
 }
 
 .cardHeader>img{

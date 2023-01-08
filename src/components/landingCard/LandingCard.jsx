@@ -7,9 +7,12 @@ const LandingCard = ({cardInfo}) => {
       <div class={css.card}>
         <div class={css.cardBody}>
           <h2>{cardInfo.title}</h2>
-          <span>{cardInfo.title.split(' ')[2]}</span>
+          <h3>{cardInfo.title.split(' ')[2]}</h3>
           <span>{cardInfo.info}</span>
-          <span>Try Saying: <br /> {cardInfo.text}</span>
+        </div>
+        <div className={css.cardBodyBottom}>
+          <span>Try Saying:</span>
+          <span>{cardInfo.text}</span>
         </div>
       </div>
     </div>
