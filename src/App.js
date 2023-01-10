@@ -20,7 +20,7 @@ const alanKeyToken =
   "694cd48855660db47cf975bf13e78e2d2e956eca572e1d8b807a3e2338fdd0dc/stage";
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
-  const [color, setColor] = useState("");
+  const [activeArticles, setActiveArticles] = useState(-1);
 
   useEffect(() => {
     alanBtn({
@@ -29,9 +29,14 @@ const App = () => {
         switch(command){
           case 'newsHeadline':
             setNewsArticles(articles);
+            setActiveArticles(-1);
             //console.log(newsArticles);
             break;
-        }
+
+          case 'highlight ':
+            setActiveArticles((prev)=> prev+1);  
+          break;
+        } 
       },
     });
   }, []);
@@ -41,7 +46,7 @@ const App = () => {
       <span className="title">
         Speech-Recognition News App
       </span>
-      <NewsCards articles={newsArticles} />
+      <NewsCards articles={newsArticles} activeArticles = {activeArticles}/>
     </div>
   );
 };

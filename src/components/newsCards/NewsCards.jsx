@@ -10,7 +10,7 @@ const landingCards = [
   {title: 'News By Categories', info:'business, entertainment, general, health, science, sports, technology', text: "Give me the recent sports highlights"  },
 ];
 
-export const NewsCards = ({ articles }) => {
+export const NewsCards = ({ articles, activeArticles }) => {
   if (!articles.length) {
     //if no articles, show a landing page
     return (
@@ -24,7 +24,7 @@ export const NewsCards = ({ articles }) => {
   return (
     <div className={css.container}>
       {articles.map((article, i) => (
-        <NewsCard article={article} i={i} />
+        <NewsCard article={article} activeArticles={activeArticles} i={i} />
       ))}
     </div>
   );

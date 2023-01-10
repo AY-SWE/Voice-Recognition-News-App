@@ -7,7 +7,8 @@
     justify-content: center;
 }
 
-.card {
+
+.card, .cardActive {
   height: 25rem;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,12 @@
   background: whitesmoke;
 }
 
+.cardActive{
+  box-shadow: 
+  inset -5px -5px 15px #84cdfa,
+  5px 5px 15px #5ad1cd, -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
 .cardHeader>img{
   width: 100%;
   object-fit: cover;
@@ -34,10 +41,39 @@
 .cardBody{
   display: flex;
   flex-direction: column;
+  padding: 4px;
 }
 
 .cardBody>span{
+  font-size: 13px;
+}
+.cardBodyHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  
+}
+.cardBodyHeader>span{
   font-size: small;
+}
+
+.cardBody>span:nth-child(2){
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  font-size: 16px;
+}
+
+.cardBodyHeader>:nth-child(1){
+  font-weight: bold;
+}
+
+.sourceNameContainer>span{
+  font-size: small;
+  border: none;
+  background: rgb(231, 20, 20);
+  border-radius: 3rem;
+  padding: 2px 7px;
+  font-weight: bold;
 }
 
 .cardBodyFooter{
