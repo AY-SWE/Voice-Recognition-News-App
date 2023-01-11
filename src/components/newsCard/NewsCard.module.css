@@ -42,6 +42,7 @@
   display: flex;
   flex-direction: column;
   padding: 4px;
+  justify-content: space-between;
 }
 
 .cardBody>span{
@@ -63,6 +64,7 @@
   font-size: 16px;
 }
 
+
 .cardBodyHeader>:nth-child(1){
   font-weight: bold;
 }
@@ -73,11 +75,31 @@
   background: rgb(231, 20, 20);
   border-radius: 3rem;
   padding: 2px 7px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .cardBodyFooter{
   display: flex;
   flex-direction:row;
   justify-content:space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.readMore>a{
+  margin-left: 5.5rem;
+  background: #23c186;
+  padding: 3px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.readMore>a:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: rgb(231, 20, 20);
+  color: #000;
 }

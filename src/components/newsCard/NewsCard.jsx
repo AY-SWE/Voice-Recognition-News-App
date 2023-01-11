@@ -21,14 +21,14 @@ const NewsCard = ({
           </div>
           <span>{title}</span>
           <span>{description}</span>
+        </div>
 
-          <div className={css.cardBodyFooter}>
-            <a href={url}>
-              <button>Read More</button>
-            </a>
+        <div className={css.cardBodyFooter}>
+            <div className={css.readMore}>
+              <a href={url}>Read More</a>
+            </div>
             <h2>{i + 1}</h2>
           </div>
-        </div>
       </div>
     </div>
   );
